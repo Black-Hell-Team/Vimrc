@@ -1,6 +1,6 @@
 # Vimrc
 
-> Vimrc made by us from Black Hell Team, it has several plugins and functions to automate things, enjoy but first see how to install below (note: it will only work for linux and termux distros)
+> Vimrc made by us from Black Hell Team, it has several plugins and functions to automate things, enjoy but first see how to install below (note: it will only work for linux ditros and termux)
 
 
 ```sh
