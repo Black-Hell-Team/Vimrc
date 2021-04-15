@@ -15,11 +15,6 @@ cd $HOME
 now type vim .vimrc and then :PluginInstall
 
 :wq
-cd $HOME
-cd .vim
-cd bundle
-rm -rf markdown.vim
-cd $HOME
 ```
 
 > _Black Hell Team_
