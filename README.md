@@ -6,7 +6,7 @@
 
 <hr>
 
-```sh
+```
 cd $HOME
 apt install curl git wget -y
 git clone https://github.com/Black-Hell-Team/Vimrc
