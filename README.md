@@ -1,3 +1,5 @@
+<hr>
+
 # Vimrc
 
 > Vimrc made by us from Black Hell Team, it has several plugins and functions to automate things, enjoy but first see how to install below (note: it will only work for linux ditros and termux)
@@ -25,3 +27,5 @@ now type vim .vimrc and then :PluginInstall
 > Update on the theme and removal of some plugins that made Vim slow.
 
 - _Black Hell Team_
+
+<hr>
