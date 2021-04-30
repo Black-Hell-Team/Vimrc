@@ -18,7 +18,6 @@ now type vim .vimrc and then :PluginInstall
 ```
 
 <h1>Updates: <h1>
-
 ## 30/04/2021
 > Update on the theme and removal of some plugins that made Vim slow.
 
