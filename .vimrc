@@ -34,13 +34,13 @@ Plugin 'AndrewRadev/tagalong.vim'
 Plugin 'mattesgroeger/vim-bookmarks'
 Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/AutoComplPop'
-Plugin 'jreybert/vimagit'
-Plugin 'ap/vim-css-color'
 Plugin 'tpope/vim-surround'
 Plugin 'mboughaba/i3config.vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'jreybert/vimagit'
+
+" Plugin 'ap/vim-css-color' Coloque ele se quiser mas que fique avisado que ele deixa o vim lento dependendo do pc ou do celular
 
 call vundle#end()
 filetype plugin on
@@ -60,8 +60,8 @@ set ruler
 set wildmenu
 set tabpagemax=50
 set termguicolors
-let g:gruvbox_italic = 1
-let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_italic = 5
+let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 set cursorline
 set number
@@ -77,10 +77,11 @@ set noshowmode
 let g:rainbow_active = 1
 
 " Vim Airline
-let g:airline_theme='gruvbox'
+let g:airline_theme='violet'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_powerline_fonts = 1
+
 
 " Indent
 set smartindent
@@ -176,13 +177,6 @@ nnoremap <C-m> :BookmarkToggle<CR>
 nnoremap <C-n> :BookmarkAnnotate<CR>
 nnoremap <C-a> :BookmarkClearAll<CR>
 
-" i3-config
-
-aug i3config_ft_detection
-    au!
-    au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config_ft_detectionfig
-aug end
-
 " Runner CTRL + g
 function! Executar(arq)
   :w
@@ -229,47 +223,9 @@ function! Executar(arq)
 endfunction
 noremap <C-g> :call Executar(shellescape(@%, 1))<CR>
 
-" scripts bash
-fun! InsertHeadBash()
-   normal(1G)
-   :set ft=bash
-   :set ts=4
-   call append(0, "#!bin/bash")
-   call append(1, "# Criado em:" . strftime("%a %d/%b/%Y hs %H:%M"))
-   call append(2, "# ultima modificação:" . strftime("%a %d/%b/%Y hs %H:%M"))
-   call append(3, "# Nome da empresa")
-   call append(3, "# Propósito do script")
-   normal($)
-endfun
-map ,sh :call InsertHeadBash()<cr>A
+" i3-config
 
-" REPL
-function! Repl()
-    :w
-    if &filetype == "javascript"
-        :exec "terminal node"
-    elseif &filetype == "lisp"
-        :exec "terminal sbcl"
-    elseif &filetype == "haskell"
-        :exec "terminal ghci"
-    elseif &filetype == "elixir"
-        :exec "terminal iex"
-    elseif &filetype == "python"
-        :exec "terminal python3"
-    elseif &filetype == "v"
-        :exec "terminal v repl"
-    elseif &filetype == "prolog"
-        :exec "terminal swipl"
-    elseif &filetype == "php"
-        :exec "terminal php -a"
-    elseif &filetype == "sh"
-        :exec "terminal"
-    elseif &filetype == "ruby"
-        :exec "terminal irb"
-    elseif &filetype == "scala"
-        :exec "terminal scala"
-    elseif &filetype == "erlang"
-        :exec "terminal erl"
-    endif
-endfunction
-noremap <C-a> :call Repl() <CR>
+aug i3config_ft_detection
+    au!
+    au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config_ft_detectionfig
+aug end
