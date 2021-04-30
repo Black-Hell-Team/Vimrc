@@ -2,6 +2,7 @@
 
 > Vimrc made by us from Black Hell Team, it has several plugins and functions to automate things, enjoy but first see how to install below (note: it will only work for linux ditros and termux)
 
+<hr>
 
 ```sh
 cd $HOME
@@ -16,6 +17,7 @@ now type vim .vimrc and then :PluginInstall
 
 :wq
 ```
+<hr>
 
 # Updates: 
 
