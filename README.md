@@ -26,6 +26,9 @@ now type vim .vimrc and then :PluginInstall
 ## 30/04/2021
 > Update on the theme and removal of some plugins that made Vim slow.
 
+## 13/05/2021
+> Theme changed to Dracula
+
 - _Black Hell Team_
 
 <hr>
