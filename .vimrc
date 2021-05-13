@@ -1,8 +1,8 @@
 " Black Hell Team
 " https://github.com/Black-Hell-Team
-" Coded by: Lucaz dev and Jo Power Tech
+" Coded by: Lucaz dev and Near Shelby
 " https://github.com/luc4sd3v
-" https://github.com/JoPowerTech
+" https://github.com/nearshelby-yt
 
 " Encoding
 set encoding=UTF-8
@@ -37,8 +37,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'mboughaba/i3config.vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'vim-scripts/AutoComplPop'
 Plugin 'jreybert/vimagit'
+Plugin 'dracula/vim', { 'name': 'dracula' }
 
 " Plugin 'ap/vim-css-color' Coloque ele se quiser mas que fique avisado que ele deixa o vim lento dependendo do pc ou do celular
 
@@ -60,9 +60,7 @@ set ruler
 set wildmenu
 set tabpagemax=50
 set termguicolors
-let g:gruvbox_italic = 5
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
+colorscheme dracula
 set cursorline
 set number
 set noerrorbells
