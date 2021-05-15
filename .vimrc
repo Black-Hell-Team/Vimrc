@@ -1,8 +1,8 @@
 " Black Hell Team
 " https://github.com/Black-Hell-Team
-" Coded by: Lucaz dev and Near Shelby
+" Coded by: Lucaz dev and Jo Power Tech
 " https://github.com/luc4sd3v
-" https://github.com/nearshelby-yt
+" https://github.com/JoPowerTech
 
 " Encoding
 set encoding=UTF-8
